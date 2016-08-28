@@ -41,6 +41,11 @@ namespace Kayak.Http
             headers = null;
         }
 
+        public void OnResponseCode(HttpParser parser, int statusCode, string statusReason)
+        {
+            throw new NotImplementedException();
+        }
+
         public void OnMethod(HttpParser parser, string method)
         {
             this.method = method;
